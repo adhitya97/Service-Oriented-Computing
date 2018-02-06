@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<University xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/Admin/Desktop/2014A7PS0035U/Lab1/University.xsd">
+	<Name/>
+	<Head>
+		<Name>Head1</Name>
+	</Head>
+	<Faculty>
+		<Name>Fac1</Name>
+	</Faculty>
+	<Student>
+		<StudentID>123</StudentID>
+	</Student>
+</University>

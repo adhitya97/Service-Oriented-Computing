@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<purchaseOrder ID="1">
+
+	<items>
+		<item>
+			<name>ItemA</name>
+			<cost>15</cost>
+			<quantity>2</quantity>
+		</item>
+		<item>
+			<name>ItemB</name>
+			<cost>25</cost>
+			<quantity>1</quantity>
+		</item>
+		<item>
+			<name>ItemC</name>
+			<cost>45</cost>
+			<quantity>22</quantity>
+		</item>
+	</items>
+	
+	<payments>
+		<payment>
+			<name>Person1</name>
+			<cardNumber>123</cardNumber>
+			<dateOfExpiry>1.1.2018</dateOfExpiry>
+		</payment>
+	</payments>
+	
+	<shippingAddresses>
+		<shippingAddress>
+			<name>Building1</name>
+			<city>Dubai</city>
+			<street>Street1</street>
+			<phoneNumber>123</phoneNumber>			
+		</shippingAddress>
+	</shippingAddresses>
+	
+	<formulae>
+		<formula>A &lt; B</formula>
+		<formula>A &gt; B</formula>
+	</formulae>
+	
+</purchaseOrder>
