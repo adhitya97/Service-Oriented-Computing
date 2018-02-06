@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PurchaseOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/Admin/Desktop/2014A7PS0035U/Lab2/PurchaseOrder.xsd">
+	<ShipTo Country="India">
+		<Name>Name1</Name>
+		<Street>Street1</Street>
+		<City>City1</City>
+		<State>S1</State>
+		<Zip>12345</Zip>
+	</ShipTo>
+	<BillTo Country="UK">
+		<Name>Name2</Name>
+		<Street>Street2</Street>
+		<City>City2</City>
+		<State>S2</State>
+		<Zip>54321</Zip>
+	</BillTo>
+	<Items>
+		<Item PartNumber="001-Ax">
+			<ProductName>Product1</ProductName>
+			<Quantity>32</Quantity>
+			<Price>123</Price>
+			<ShippingDate>2009-01-31</ShippingDate>
+		</Item>
+		<Item PartNumber="002-bU">
+			<ProductName>Product2</ProductName>
+			<Quantity>44</Quantity>
+			<Price>555.55</Price>
+			<ShippingDate>2009-01-20</ShippingDate>
+		</Item>
+	</Items>
+</PurchaseOrder>

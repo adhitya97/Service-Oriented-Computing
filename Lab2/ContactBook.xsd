@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2016 (x64) (http://www.altova.com) by BITS-PILANI University, Dubai Campus (BITS-PILANI University, Dubai Campus) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:element name="Contacts">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="FirstName" type="xs:string"/>
+				<xs:element name="LastName" type="xs:string"/>
+				<xs:element name="PetName" type="xs:string"/>
+				<xs:element name="City">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:length value="2" fixed="false"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Country" type="xs:string"/>
+				<xs:element name="PinCode">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="[0-9]{5}-[0-9]{4}"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

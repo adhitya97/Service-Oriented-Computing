@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/Admin/Desktop/2014A7PS0035U/Lab2/ContactBook.xsd">
+	<FirstName>FName1</FirstName>
+	<LastName>LName1</LastName>
+	<PetName>PName1</PetName>
+	<City>C1</City>
+	<Country>Country1</Country>
+	<PinCode>12312-3123</PinCode>
+</Contacts>
