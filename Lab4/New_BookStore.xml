@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><BookStore sampleAttrib="sampleAttribute">
+	<Book Category="Engineering">
+		<Title>Book1</Title>
+		<Author>Author1</Author>
+		<Year>2000</Year>
+		<Price>100</Price>
+	<ISBN>ISBN2</ISBN></Book>
+	<Book Category="General Science">
+		<Title>Book2</Title>
+		<Author>Author2</Author>
+		<Year>2003</Year>
+		<Price>232</Price>
+	<ISBN>ISBN4</ISBN></Book>
+	<Book Category="Fiction">
+		<Title>Book3</Title>
+		<Author>Author3</Author>
+		<Year>2009</Year>
+		<Price>145</Price>
+	<ISBN>ISBN6</ISBN></Book>
+<Book Category="Engineering">
+		<Title>Book1</Title>
+		<Author>Author1</Author>
+		<Year>2000</Year>
+		<Price>100</Price>
+	<ISBN>ISBN2</ISBN></Book><Book Category="General Science">
+		<Title>Book2</Title>
+		<Author>Author2</Author>
+		<Year>2003</Year>
+		<Price>232</Price>
+	<ISBN>ISBN4</ISBN></Book><Book Category="Fiction">
+		<Title>Book3</Title>
+		<Author>Author3</Author>
+		<Year>2009</Year>
+		<Price>145</Price>
+	<ISBN>ISBN6</ISBN></Book></BookStore>

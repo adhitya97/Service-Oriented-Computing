@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BookStore sampleAttrib="sampleAttribute">
+	<Book Category="Engineering">
+		<Title>Book1</Title>
+		<Author>Author1</Author>
+		<Year>2000</Year>
+		<Price>100</Price>
+	</Book>
+	<Book Category="General Science">
+		<Title>Book2</Title>
+		<Author>Author2</Author>
+		<Year>2003</Year>
+		<Price>232</Price>
+	</Book>
+	<Book Category="Fiction">
+		<Title>Book3</Title>
+		<Author>Author3</Author>
+		<Year>2009</Year>
+		<Price>145</Price>
+	</Book>
+</BookStore>
