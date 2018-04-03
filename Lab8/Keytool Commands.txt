@@ -1,0 +1,13 @@
+Traverse to the JDK location
+cd C:\Program Files\Java\jdk1.8.0_121\bin
+
+Generate the key pair
+keytool -genkeypair -alias business -keyalg RSA -keypass 123456 -keystore C:\Users\Admin\Desktop\2014A7PS0035U\Lab8\KeyStore1.keystore -storepass 123456
+
+
+Export certificate
+keytool -exportcert -alias business -file C:\Users\Admin\Desktop\2014A7PS0035U\Lab8\Certificate1.cer -keystore C:\Users\Admin\Desktop\2014A7PS0035U\Lab8\KeyStore1.keystore -storepass 123456
+
+
+Print the certificate
+keytool -printcert -file C:\Users\Admin\Desktop\2014A7PS0035U\Lab8\Certificate1.cer
