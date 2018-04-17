@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2016 (x64) (http://www.altova.com) by BITS-PILANI University, Dubai Campus (BITS-PILANI University, Dubai Campus) -->
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://new.webservice.namespace" targetNamespace="http://new.webservice.namespace">
+	<wsdl:types>
+		<xs:schema targetNamespace="http://new.webservice.namespace" elementFormDefault="qualified"/>
+	</wsdl:types>
+	<wsdl:message name="GetTemperatureRequest">
+		<wsdl:part name="city" type="xs:string"/>
+	</wsdl:message>
+	<wsdl:message name="GetTemperatureResponse">
+		<wsdl:part name="temperature" type="xs:int"/>
+	</wsdl:message>
+	<wsdl:portType name="WeatherPortType1">
+		<wsdl:operation name="GetTemperature">
+			<wsdl:input message="tns:GetTemperatureRequest"/>
+			<wsdl:output message="tns:GetTemperatureResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:portType name="WeatherPortType2">
+		<wsdl:operation name="GetTemperature">
+			<wsdl:input message="tns:GetTemperatureRequest"/>
+			<wsdl:output message="tns:GetTemperatureResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="WeatherBinding1" type="tns:WeatherPortType1">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="GetTemperature">
+			<soap:operation soapAction="urn:#GetTemperature" style="rpc"/>
+			<wsdl:input>
+				<soap:body use="encoded"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="encoded"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="WeatherBinding2" type="tns:WeatherPortType2">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="GetTemperature">
+			<soap:operation soapAction="urn:#GetTemperature" style="rpc"/>
+			<wsdl:input>
+				<soap:body use="encoded"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="encoded"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="WeatherForecastService1">
+		<wsdl:port name="WeatherPortType1" binding="tns:WeatherBinding1">
+			<soap:address location="http://www.anyplace1.com/WeatherForecast"/>
+		</wsdl:port>
+	</wsdl:service>
+	<wsdl:service name="WeatherForecastService2">
+		<wsdl:port name="WeatherPortType2" binding="tns:WeatherBinding2">
+			<soap:address location="http://www.anyplace2.com/WeatherForecast"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
