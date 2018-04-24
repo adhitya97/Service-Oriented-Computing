@@ -1,0 +1,25 @@
+1)
+
+keytool.exe -genkeypair -alias LabExam2 -keysize 1024 -storepass abcdefgh12 -sigalg SHA256withRSA -keyalg RSA -keypass mnopqrst -keystore C:\Users\Admin\Desktop\2014A7PS0035\SOCLab2.keystore 
+
+
+C:\Program Files (x86)\Java\jdk1.6.0_39\bin>keytool.exe -genkeypair -alias LabExam2 -keysize 1024 -storepass abcdefgh12 -sigalg SHA256withRSA -keypass mnopqr
+st -keystore C:\Users\Admin\Desktop\2014A7PS0035\SOCLab2.keystore -keyalg RSA
+What is your first and last name?
+  [Unknown]:  Adhitya Rajagopalan
+What is the name of your organizational unit?
+  [Unknown]:  Business
+What is the name of your organization?
+  [Unknown]:  BITS
+What is the name of your City or Locality?
+  [Unknown]:  Academic City
+What is the name of your State or Province?
+  [Unknown]:  Dubai
+What is the two-letter country code for this unit?
+  [Unknown]:  AE
+Is CN=Adhitya Rajagopalan, OU=Business, O=BITS, L=Academic City, ST=Dubai, C=AE correct?
+  [no]:  yes
+
+
+
+2)
