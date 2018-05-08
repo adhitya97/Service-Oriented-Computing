@@ -1,0 +1,47 @@
+1) 
+C:\Program Files\Java\jdk1.8.0_121\bin>keytool.exe -genkeypair -alias clientprivate -keystore "C:\Users\Admin\Desktop\2014A7PS0035U\SSLCommunication\Keystores\client.private" -storetype JKS -keyalg rsa -storepass clientpw -keypass clientpw
+
+
+What is your first and last name?
+  [Unknown]:  Adhitya
+What is the name of your organizational unit?
+  [Unknown]:  Finance
+What is the name of your organization?
+  [Unknown]:  BITS
+What is the name of your City or Locality?
+  [Unknown]:  Academic City
+What is the name of your State or Province?
+  [Unknown]:  Dubai
+What is the two-letter country code for this unit?
+  [Unknown]:  AE
+Is CN=Adhitya, OU=Finance, O=BITS, L=Academic City, ST=Dubai, C=AE correct?
+  [no]:  yes
+
+
+
+2)
+
+keytool -genkeypair -alias serverprivate -keystore C:\Users\Admin\Desktop\2014A7PS0035U\SSLCommunication\Keystores\server.private -storetype JKS -keyalg rsa -dname "CN=Your Name, OU=Your Organizational Unit, O=Your Organization, L=Your City, S=Your State, C=Your Country" -storepass serverpw -keypass serverpw
+
+
+3) Exporting the client's public key from the keystore and store it into a separate public keystore.
+i)
+keytool -export -alias clientprivate -keystore C:\Users\Admin\Desktop\2014A7PS0035U\SSLCommunication\Keystores\client.private -file C:\Users\Admin\Desktop\2014A7PS0035U\SSLCommunication\Keystores\temp.key -storepass clientpw
+ii)
+keytool -import -noprompt -alias clientpublic -keystore C:\Users\Admin\Desktop\2014A7PS0035U\SSLCommunication\Keystores\client.public -file C:\Users\Admin\Desktop\2014A7PS0035U\SSLCommunication\Keystores\temp.key -storepass public
+
+
+NOTE: Delete the temp file at this point
+
+4) Exporting the server's public key from the keystore and store it into a separate public keystore.
+i)
+keytool -export -alias serverprivate -keystore C:\Users\Admin\Desktop\2014A7PS0035U\SSLCommunication\Keystores\server.private -file C:\Users\Admin\Desktop\2014A7PS0035U\SSLCommunication\Keystores\temp.key -storepass serverpw
+
+ii)
+keytool -import -noprompt -alias serverpublic -keystore C:\Users\Admin\Desktop\2014A7PS0035U\SSLCommunication\Keystores\server.public -file C:\Users\Admin\Desktop\2014A7PS0035U\SSLCommunication\Keystores\temp.key -storepass public
+
+
+Now, create two projects - one for the server and one for the client
+
+Copy server.private and client.public into the server project
+Copy client.private and server.public into the client project
